@@ -1,0 +1,175 @@
+***********************************************************************
+						No recuerdo qué significa
+***********************************************************************
+Revisar ítems.
+
+
+
+
+
+***********************************************************************
+								Preguntas
+***********************************************************************
++++x?: Problema con collapse - acordeon en html puro (finalizar compra) --> deberiamos solucionarlo para la proxima entrega.
++++x?: Ver correccion informe --> preguntas: la api necesita el DNI.
++++x?: Ver lo de responsive o no X-> ya lo vamos a hacer responsive.
++++x?: como asociar teclado a botones --> lo tenemos que buscar nosotros.
++++x?: preguntar lo de las cookies para estar logueado --> lo van a montar en un servidor --> se puede.
++++x?: tiene que pasar el validador de HTML o de XHTML? el de HTML.
++++x?: en que navegadores van a probar el proyecto? --> está en la consigna.
+
+
+***********************************************************************
+								General
+***********************************************************************
+Chequeo responsive: SI
+cart: si
+detalle: si
+busqueda: si
+finalizar_compra: sí
+index: no
+pagina_confirmacion: no (por la parte en que implica el cart)
+profile: si
+register: no
+
+
+
+
+
+
+
+***********************************************************************
+								TODOS
+***********************************************************************
+-----------------------------------------------------------------------
+CAMBIAR EL TITULO DEL HEAD DE LA PAGINA POR look&feel
+-----------------------------------------------------------------------
+
+Cambiar las flechasde pagina busqueda por las imagenes (sacar las de bootstrap).
+
+REMOVE 'STYLE' DE LOS HTML
+
+REVISAR FORMATO HTML
+REVISAR TILDES
+REVISAR CONSISTENCIA DE LOS ":"
+
+-----------------------------------------------------------------------
+Cuando pone "Confirmar Compra" en pagina_confirmacion --> va a la
+pantalla "Mis pedidos".
+-----------------------------------------------------------------------
+
+Detección de javascript en el navegador --> ¿está activado? (tag <noscript>)
+
+
+Bajar la calidad de las imagenes que corresponda.
+
+
+sacar los scripts de javascript de adentro de los html y ponerlos en archivos aparte.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+Agregar como links muertos los de los breadcrums, '¿Cómo Comprar?', y los 'Modificar' de 'Mi Perfil'.
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+***********************************************************************
+							JUAN
+***********************************************************************
+Ver que la barra principal me queda en dos renglones --> achicar el ancho de la barra de busqueda. DONE
+
+sacar el non-responsive al home. DONE
+terminar el home: agregarle diferentes imagenes y todos los menues desplegables. DONE
+
+Elegir el fondo junto con Guido. DONE
+
+***********************************************************************
+							GUIDO
+***********************************************************************
+Arreglar el breadscrum para que coincid con el del informe (ver página 74) DONE
+
+Revisa Si Funciona El Responsive De 'Detalle_Producto.Html'. DONE
+No Me Esta Funcionando El Responsive De 'Register' --> Revisar!!! DONE
+
+Click en "ver detalles de compra" --> cambia a "ocultar detalles de compra" en pagina_confirmacion --> hacerlo con javascript (te lo dejo a vos porque ya lo hiciste). DONE
+
+Armar la página de favoritos copiando el estilo de la página de Carrito (que ya quedo responsive). DONE
+
+Hacer que 'En perfil', en 'Mis pedidos', se pueda ver el estado de la compra. DONE
+
+Sacar los dos elementos del carrito (que son el mismo), y dejar uno sólo.  DONE
+
+Armar una página sencilla que diga "sitio en Construcción." DONE
+
+***********************************************************************
+							HARRY
+***********************************************************************
+Empezar con el informe DONE
+
+
+***********************************************************************
+								YO
+***********************************************************************
+
+
+unificar o separar las hojas de estilo (creo que a renombrar como product style).
+
+Cargar dinámicamente con javascript.
+
+
+window.location.pathname --> parsear string.
+
+-----------------------------------------------------------------------
+Tildes de harry. 
+Revisar que no haya ningun 'style' en el html.
+Organize HTML for good representation.
+Validate HTML.
+-----------------------------------------------------------------------
+
+
+
+***********************************************************************
+							INFORME
+***********************************************************************
+Los filtros se marcan automaticamente (quedan marcados entre paginas o se salen?).
+
+Explicar qué hace el buscar filtro.
+
+Explicar que en el maquetado se hizo solo como si se buscara con searchbox para disminuir la cantidad de paginas, pero que al momento de hacer las busquedas de veras se pondria "resultados de busqueda" o "Hombres - Indumentaria - Buzos" (consiste en incorporar javascript).
+
+Explicar el comportamiento que le damos al boton aplicar filtro y al Cancelar, y por qué.
+aplicar filtro --> te lleva a la pagina de filtros.
+cancelar --> cierra todos los pop-ups.
+
+
+Cart: Problema al añadir el affix para el tamaño de las pantallas chico --> vamos a tratar de solucionarlo para entrega final, par respetar el prototipo.
+
+
+Comentar que los carteles de error van a ser añadidos para la siguiente entrega, con comportamiento javascript, en base a las respuestas obtenidas de las consultas.
+
+
+
+***********************************************************************
+							A Futuro
+***********************************************************************
+Sin imagen --> para cuando no devuelve imagen.
+
+Agregar un producto al carrito requiere que estés logueado.
+
++++x?: Problema con la cantidad de caracteres en la página de búsqueda: para solucionarlo, probar 'overflow:hidden;' 
+
+-----------------------------------------------------------------------
+CENTRAR BOTONES Y COLUMNAS EN FILAS
+-----------------------------------------------------------------------
+
+idea para el carrito: dejar un div con id arriba de todo y abajo de todo (que tengan el mismo id), y si el ancho de la pantalla se hace menor que el de la pc (992px) --> hacer desaparecer el resumen de compra del costado (hacerlo con afix, como lo hice con las flechas), e inyectarle ese codigo a esos divs. --> esto va a permitir el comportamiento responsivo.
+
+asociar teclado a botones (para agregar comportamiento)
+
+EXPLICAR EN INFORME POR QUÉ NO SE RESPETO EL FLUJO (ACÁ NO DAMOS LA
+POSIBILIDAD DE IMPRIMIR LA INFORMACION DEL TICKET)
+
+
+Posibles mensajes de error a considerar:
+	USUARIO NO EXISTE AL MOMENTO DEL LOGUEO.
+
+	DATOS INVALIDOS.

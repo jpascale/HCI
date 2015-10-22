@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>look&amp;feel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">  
+<!-- own stylesheet -->
+<link rel="stylesheet" type="text/css" href="pagina_busqueda.css">
+
+
+</head>
+
+ <body>
+
+    <header id="content-top">
+    <!-- ____________________________________________________ -->
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="logo-box" class="navbar-brand verticalLine" href="index.html"><h1><!--<img class="logo-img" alt="logo" src="img/logo.png">-->look&amp;feel</h1></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+            <ul class="nav navbar-nav">
+              <li id="women"><a id="women-link" href="#">Mujeres</a></li>
+              <li id="men"><a id="men-link" href="#" class="verticalLine">Hombres</a></li>
+              <li id="girls"><a id="girls-link" href="#">Niñas</a></li>
+              <li id="boys" class="verticalLine"><a id="boys-link" href="#">Niños</a></li>
+              <li id="trademarks"><a id="trademarks-link" href="#">Marcas</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control search-bar" placeholder="Buscar un producto">
+              </div>
+              <button id="search" type="button" class="btn btn-default">Ir</button>
+            </form>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a id="register" href="register.html">Registrarse</a></li>
+              <li class="verticalLine"><a id="login" href="ingresar.html">Ingresar</a></li>
+              <li><a id="cart-link" href="cart.html"><img id="cart-img" src="img/cart.png" alt="carrito">(1)</a></li>
+              <li><a id="fav-link" href="favoritos.html"><img id="fav-img" src="img/fav.png" alt="favoritos">(2)</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+<!-- ____________________________________ -->
+    
+  </header>
+
+<!-- Breadcrumb -->
+<div class="container bsbs">
+	    <noscript>
+      <div class="alert alert-danger" role="alert">
+       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+       <span class="sr-only">Error:</span>
+        Es necesario activar JavaScript para que la web funcione correctamente.
+      </div>
+    </noscript>
+	<ol class="breadcrumb breadcrumb_own">
+	  <li><a href="search_page_1.html">Hombre</a></li>
+	  <li><a href="search_page_1.html">Indumentaria</a></li>
+	  <li class="active">Buzos</li>
+	</ol>
+</div>
+
+<!-- Search Result Line -->
+<div class="container">
+	<div class="row row_container_div_product_search">
+		<div class="col-xs-12 col-md-6">
+			<h2 class="page-title">
+				<strong>Hombre-Indumentaria-Buzos</strong>
+			</h2>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<ul class="paging">
+				<li>Página 1 de 2</li>
+				<li>Mostrando artículos 1-16</li>
+				<li>Total artículos: 17</li> 
+			</ul>
+		</div>
+		<!-- Empty Left column -->		
+		<div class="col-xs-6">
+		</div>
+
+		<!-- Pagination -->
+		<div class="col-xs-6">
+			<nav>
+				<ul class="pagination pagination-sm pagination_own pull-right">
+					<li class="active"><a href="search_page_1.html">1</a></li>
+					<li><a href="search_page_2.html">2</a></li>
+					<li>
+						<a href="search_page_2.html" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<!-- Filters Header -->
+<div class="container">
+	<div class="row">
+		<!-- Filters Title -->
+		<div class="col-xs-4">
+			<h3 class="page-subtitle">
+				Filtros:
+			</h3>
+		</div>
+		<!-- En Oferta -->
+		<div class="col-xs-4 on_sale">
+			<label>
+				<input type="checkbox" value="">
+					<strong>En Oferta</strong>
+			</label>
+		</div>
+		<!-- Ordenar Por -->
+		<div class="col-xs-4 order_by">
+			<button class="btn btn-primary" type="button" id="collapse_ordenar_por">
+				Ordenar Por
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- Filters -->
+<div class="container">
+	<div class="row"> 
+		<ul class="no-bullets">
+			<!-- Marca -->
+			<li class="col-xs-4 col-md-2 centered">
+				<button class="btn btn-primary" type="button" id="collapse_marca">
+					Marca
+				</button>
+			</li>
+			<!-- Color -->
+			<li class="col-xs-4 col-md-2 centered">
+				<button class="btn btn-primary" type="button" id="collapse_color">
+					Color
+				</button>
+			</li>
+			<!-- Talle -->
+			<li class="col-xs-4 col-md-2 centered">
+				<button class="btn btn-primary" type="button" id="collapse_talle">
+					Talle
+				</button>
+			</li>
+			<!-- Precio -->
+			<li class="col-xs-4 col-md-2 centered">
+				<button class="btn btn-primary" type="button" id="collapse_precio">
+					Precio
+				</button>
+			</li>
+			<!-- Material -->
+			<li class="col-xs-4 col-md-2 centered">
+				<button class="btn btn-primary" type="button" id="collapse_material">
+					Material
+				</button>
+			</li>
+			<!-- Ocasion -->
+			<li class="col-xs-4 col-md-2 centered">
+				<button class="btn btn-primary" type="button" id="collapse_ocasion">
+					Ocasión
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- Filtros para aplicar -->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-8">
+			<div class="collapse" id="accordion_collapse_ordenar_por">
+				<div class="well">
+					<div class="row">
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-8 center">
+							<div class="row">
+								<div class="col-xs-12">
+									<p class="page-subtitle centered">Ordenar Por</p>
+								</div>
+								<div class="col-xs-2"></div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-md btn-success pull-right apply_filter">
+										Aplicar Filtro
+									</button>
+								</div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-danger btn-md pull-left cancel_filter">
+										Cancelar
+									</button>
+								</div>
+								<div class="col-xs-2"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1">
+								</div>
+								<div class="col-xs-10">
+									<div class="input-group filter_search_box">
+										<input type="text" class="form-control" placeholder="Buscar filtro">
+									</div>
+								</div>
+								<div class="col-xs-1">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<ul class="no-bullets column_filter">
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Marca</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Color</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Talle</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Precio</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Material</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Ocasión</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-8">
+			<div class="collapse" id="accordion_collapse_marca">
+				<div class="well">
+					<div class="row">
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-8 center">
+							<div class="row">
+								<div class="col-xs-12">
+									<p class="page-subtitle centered">Marca</p>
+								</div>
+								<div class="col-xs-2"></div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-md btn-success pull-right apply_filter">
+										Aplicar Filtro
+									</button>
+								</div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-danger btn-md pull-left cancel_filter">
+										Cancelar
+									</button>
+								</div>
+								<div class="col-xs-2"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1">
+								</div>
+								<div class="col-xs-10">
+									<div class="input-group filter_search_box">
+										<input type="text" class="form-control" placeholder="Buscar filtro">
+									</div>
+								</div>
+								<div class="col-xs-1">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<ul class="no-bullets column_filter">
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Adidas</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Nike</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Puma</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Lacoste</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-8">
+			<div class="collapse" id="accordion_collapse_color">
+				<div class="well">
+					<div class="row">
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-8 center">
+							<div class="row">
+								<div class="col-xs-12">
+									<p class="page-subtitle centered">Color</p>
+								</div>
+								<div class="col-xs-2"></div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-md btn-success pull-right apply_filter">
+										Aplicar Filtro
+									</button>
+								</div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-danger btn-md pull-left cancel_filter">
+										Cancelar
+									</button>
+								</div>
+								<div class="col-xs-2"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1">
+								</div>
+								<div class="col-xs-10">
+									<div class="input-group filter_search_box">
+										<input type="text" class="form-control" placeholder="Buscar filtro">
+									</div>
+								</div>
+								<div class="col-xs-1">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<ul class="no-bullets column_filter">
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Amarillo</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Azul</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Blanco</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Bordó</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Celeste</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Fucsia</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Gris</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Negro</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Rojo</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Verde</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-8">
+			<div class="collapse" id="accordion_collapse_talle">
+				<div class="well">
+					<div class="row">
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-8 center">
+							<div class="row">
+								<div class="col-xs-12">
+									<p class="page-subtitle centered">Talle</p>
+								</div>
+								<div class="col-xs-2"></div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-md btn-success pull-right apply_filter">
+										Aplicar Filtro
+									</button>
+								</div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-danger btn-md pull-left cancel_filter">
+										Cancelar
+									</button>
+								</div>
+								<div class="col-xs-2"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1">
+								</div>
+								<div class="col-xs-10">
+									<div class="input-group filter_search_box">
+										<input type="text" class="form-control" placeholder="Buscar filtro">
+									</div>
+								</div>
+								<div class="col-xs-1">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<ul class="no-bullets column_filter">
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">S</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">M</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">L</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">XL</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-8">
+			<div class="collapse" id="accordion_collapse_precio">
+				<div class="well">
+					<div class="row">
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-8 center">
+							<div class="row">
+								<div class="col-xs-12">
+									<p class="page-subtitle centered">Precio</p>
+								</div>
+								<div class="col-xs-2"></div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-md btn-success pull-right apply_filter">
+										Aplicar Filtro
+									</button>
+								</div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-danger btn-md pull-left cancel_filter">
+										Cancelar
+									</button>
+								</div>
+								<div class="col-xs-2"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1">
+								</div>
+								<div class="col-xs-10">
+									<div class="input-group filter_search_box">
+										<input type="text" class="form-control" placeholder="Buscar filtro">
+									</div>
+								</div>
+								<div class="col-xs-1">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<ul class="no-bullets column_filter">
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">$0 - $200</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">$200 - $400</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">$400 - $600</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">$600 - 800</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">$800 o más</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-8">
+			<div class="collapse" id="accordion_collapse_material">
+				<div class="well">
+					<div class="row">
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-8 center">
+							<div class="row">
+								<div class="col-xs-12">
+									<p class="page-subtitle centered">Material</p>
+								</div>
+								<div class="col-xs-2"></div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-md btn-success pull-right apply_filter">
+										Aplicar Filtro
+									</button>
+								</div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-danger btn-md pull-left cancel_filter">
+										Cancelar
+									</button>
+								</div>
+								<div class="col-xs-2"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1">
+								</div>
+								<div class="col-xs-10">
+									<div class="input-group filter_search_box">
+										<input type="text" class="form-control" placeholder="Buscar filtro">
+									</div>
+								</div>
+								<div class="col-xs-1">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<ul class="no-bullets column_filter">
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Lana</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Algodón</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Polar</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Cuero</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-8">
+			<div class="collapse" id="accordion_collapse_ocasion">
+				<div class="well">
+					<div class="row">
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-8 center">
+							<div class="row">
+								<div class="col-xs-12">
+									<p class="page-subtitle centered">Ocasión</p>
+								</div>
+								<div class="col-xs-2"></div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-md btn-success pull-right apply_filter">
+										Aplicar Filtro
+									</button>
+								</div>
+								<div class="col-xs-4 centered">
+									<button type="button" class="btn btn-danger btn-md pull-left cancel_filter">
+										Cancelar
+									</button>
+								</div>
+								<div class="col-xs-2"></div>
+							</div>
+							<div class="row">
+								<div class="col-xs-1">
+								</div>
+								<div class="col-xs-10">
+									<div class="input-group filter_search_box">
+										<input type="text" class="form-control" placeholder="Buscar filtro">
+									</div>
+								</div>
+								<div class="col-xs-1">
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-12">
+							<div class="row">
+								<ul class="no-bullets column_filter">
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Fiesta</label>
+									</li>
+									<li class="col-xs-6 col-md-4 column_filter">
+										<label class="filter_label"><input type="checkbox" value="">Cotidiana</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2">
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Results Zone -->
+<div class="container">
+	<div class="row row-eq-height row_container_div_product_search">
+		<!-- +++xfix: Having responsive problems -->
+		<div class="col-xs-1 col-md-1">
+			<!-- This one does not go because it is the first page
+			<a href="#" data-spy="affix" data-offset-top="150">
+				<img src="./img/larrow.png" alt="Previous Search Page" class="btn btn-lg img-responsive"/>
+			</a> -->
+		</div>
+		<div class="col-xs-10 col-md-10">
+			<div class="row row_container_div_product_search">
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod1.jpg" alt="Buzo Canguro"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Canguro</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Gris</li>
+								<li class="col-xs-12 product_description_product_search product_description">New Balance</li>
+								<li class="col-xs-12 product_description_product_search product_description">New Logo</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$789,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod2.jpg" alt="Buzo Naturaleza"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Naturaleza</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Verde</li>
+								<li class="col-xs-12 product_description_product_search product_description">Posto 5</li>
+								<li class="col-xs-12 product_description_product_search product_description">Liso</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$515,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod3.jpg" alt="Buzo Hell"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Hell</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Fucsia</li>
+								<li class="col-xs-12 product_description_product_search product_description">CD Terra</li>
+								<li class="col-xs-12 product_description_product_search product_description">Canguro</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$445,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod4.jpg" alt="Buzo Manchado"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Manchado</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Gris</li>
+								<li class="col-xs-12 product_description_product_search product_description">Vete al Diablo</li>
+								<li class="col-xs-12 product_description_product_search product_description">Animal Print</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$750,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod5.jpg" alt="Buzo Estampado"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Estampado</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Bordó</li>
+								<li class="col-xs-12 product_description_product_search product_description">CD Terra</li>
+								<li class="col-xs-12 product_description_product_search product_description">Estampado</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$560,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod6.jpg" alt="Buzo Estampado"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Estampado</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Azul</li>
+								<li class="col-xs-12 product_description_product_search product_description">CD Terra</li>
+								<li class="col-xs-12 product_description_product_search product_description">Estampado</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$387,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod7.jpg" alt="Buzo Canguro"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Canguro</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Azul</li>
+								<li class="col-xs-12 product_description_product_search product_description">Posto 5</li>
+								<li class="col-xs-12 product_description_product_search product_description">Canguro</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$445,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod8.jpg" alt="Buzo Negro"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Negro</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Negro</li>
+								<li class="col-xs-12 product_description_product_search product_description">Vete al Diablo</li>
+								<li class="col-xs-12 product_description_product_search product_description">Canguro</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$890,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod9.jpg" alt="Buzo Canguro"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Canguro</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Rojo</li>
+								<li class="col-xs-12 product_description_product_search product_description">New Balance</li>
+								<li class="col-xs-12 product_description_product_search product_description">New Logo</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$789,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod10.jpg" alt="Buzo 10"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Canguro</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Negro</li>
+								<li class="col-xs-12 product_description_product_search product_description">New Balance</li>
+								<li class="col-xs-12 product_description_product_search product_description">New Logo</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$789,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod11.jpg" alt="Buzo Básico"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Básico</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Azul</li>
+								<li class="col-xs-12 product_description_product_search product_description">Felix</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$885,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod12.jpg" alt="Buzo Canguro"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Canguro</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Gris</li>
+								<li class="col-xs-12 product_description_product_search product_description">New Balance</li>
+								<li class="col-xs-12 product_description_product_search product_description">Jimp</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$789,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod13.jpg" alt="Buzo Canguro"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Canguro</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Azul</li>
+								<li class="col-xs-12 product_description_product_search product_description">CD Terra</li>
+								<li class="col-xs-12 product_description_product_search product_description">Tint</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$445,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod14.jpg" alt="Buzo Canguro"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Canguro</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Negro</li>
+								<li class="col-xs-12 product_description_product_search product_description">C1RCA</li>
+								<li class="col-xs-12 product_description_product_search product_description">Brewer</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$666,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod15.jpg" alt="Buzo Estampao"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Estampado</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Gris</li>
+								<li class="col-xs-12 product_description_product_search product_description">Etnies</li>
+								<li class="col-xs-12 product_description_product_search product_description">Lupin</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$805,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+				<!-- Product -->
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="row hovereffect ">
+						<div class="col-xs-6 img_div_product_search">
+							<img class="img_product_search" src="./img/prod16.jpg" alt="Buzo Esampado"/>
+						</div>
+						<div class="col-xs-6 verticalLine">
+							<h3 class="product_title_product_search">
+								<strong>Buzo Estampado</strong>
+							</h3>
+							<ul class="row row_container_div_product_search list-unstyled">
+								<li class="col-xs-12 product_description_product_search product_description">Buzo Gris</li>
+								<li class="col-xs-12 product_description_product_search product_description">Sixfeet</li>
+								<li class="col-xs-12 product_description_product_search product_description">Tiger</li>
+								<li class="col-xs-12 product_description_product_search product_price">
+									<strong>$599,00</strong>
+								</li>
+							</ul>
+						</div>				
+						<div class="overlay">
+							<a class="info" href="detalle_producto.html"></a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<!-- Having responsive problems -->
+		<div class="col-xs-1 col-md-1">
+			<a href="search_page_2.html" data-spy="affix" data-offset-top="150">
+				<img src="./img/rarrow.png" alt="Next Search Page" class="btn btn-lg img-responsive"/>
+			</a>
+		</div>
+	</div>
+</div>
+
+<!-- Search Result Line -->
+<div class="container">
+	
+	<!-- Separator -->
+	<div class="row row_divider_tight">
+		<hr class="hr_horizontal">
+		<br/>
+	</div>
+	
+	<div class="row row_container_div_product_search">
+		<div class="col-xs-12 col-md-6">
+			<ul class="paging pull-left">
+				<li>Página 1 de 2</li>
+				<li>Mostrando artículos 1-16</li>
+				<li>Total artículos: 17</li> 
+			</ul>
+		</div>
+		<!-- Paging -->
+		<div class="col-xs-12 col-md-6">
+			<nav>
+				<ul class="pagination pagination-sm pagination_own pull-right">
+					<li class="active"><a href="search_page_1.html">1</a></li>
+					<li><a href="search_page_2.html">2</a></li>
+					<li>
+						<a href="search_page_2.html" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+    <footer class="footer">
+      <div class="container footer-cont">
+
+        <div class="row">
+
+          <div class="col-xs-6 col-sm-6 col-md-8">
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col1">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Seguinos</b>
+                      </p>
+                        <ul>
+                          <li><a href="http://facebook.com" target="_blank">Facebook</a></li>
+                          <li><a href="http://twitter.com" target="_blank">Twitter</a></li>
+                          <li><a href="http://instagram.com" target="_blank">Instagram</a></li>
+                          <li><a href="https://plus.google.com" target="_blank">Google+</a></li>
+                          <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                
+
+                  <div class="col-xs-6 col-sm-6 col-md-6 col2">
+                    <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Empresa</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">¿Quiénes somos?</a></li>
+                          <li><a href="en_construccion.html">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-xs-12 col-sm-12 col-md-6"> <!---->  
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col3">
+                     <div class="footer-text">
+                      <p class="text-muted">
+                        <b>Ayuda</b>
+                      </p>
+                        <ul>
+                          <li><a href="en_construccion.html">Atención al cliente</a></li>
+                          <li><a href="en_construccion.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="col-xs-6 col-sm-6 col-md-6 col4">
+                   <div class="footer-text">
+                    <p class="text-muted">
+                      <b>Medios de pago</b>
+                    </p>
+                      <ul>
+                        <li><a href="http://www.visa.com.ar/" target="_blank">Visa</a></li>
+                        <li><a href="https://www.masterconsultas.com.ar/" target="_blank">Mastercard</a></li>
+                        <li><a href="https://www.americanexpress.com/ar/" target="_blank">American Express</a></li>
+                        <li><a href="http://www.mastercard.com/ar/consumidores/maestro.html" target="_blank">Maestro</a></li>
+                        <li><a href="http://www.cabal.coop/" target="_blank">Cabal</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-1 -col5">
+            <div class="footer-buy-button">
+              <!--<p class="text-muted">-->
+                <button id="howtobuy" class="btn btn-default howtobuy" type="button">
+                  ¿Cómo comprar?
+                </button>
+              <!--</p>-->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+<script src="search_page.js"></script>
+
+<script src="index.js"></script>
+<script>
+
+$( document ).ready(function() {
+   	loadCollapseBehaviour();
+   	loadCancelFilterBehaviour();
+   	loadApplyFilterBehaviour();
+});
+
+  $(document).ready(function() {
+    
+    $('#howtobuy').on('click', function() {
+      window.location = 'en_construccion.html';
+    });
+
+    $('#search').on('click', function() {
+      window.location = 'search_page_1.html';
+    });
+
+    loadLoginInterface();
+
+    loadLoginLogoutInterface();
+
+    loadTrademarks();
+    loadCategory('women');
+    loadCategory('men');
+    loadCategory('girls');
+    loadCategory('boys');
+
+  });
+
+
+</script>
+
+
+</body>
+</html>
